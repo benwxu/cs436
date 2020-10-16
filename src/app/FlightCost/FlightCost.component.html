@@ -1,0 +1,32 @@
+<!--
+  Revision of class registration to include binding to component model
+
+  Highlight
+  Find the <input> tag next to the Name label.
+  Add the ngModel directive, using two-way data binding syntax [(ngModel)]="...".
+-->
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+  <div class="form-group">
+    <label>Origination Airport</label>
+    <input type="text" class="form-control" name="originAiport" [(ngModel)]="model.originAiport">
+  </div>
+
+  <div class="form-group">
+    <label>Destination Airport</label>
+    <input type="text" class="form-control" name="destAiport" [(ngModel)]="model.destAiport">
+  </div>
+
+  <div class="form-group">
+    <label>Travel Date</label>
+    <input type="date" class="form-control"  name="travelDate" [(ngModel)]="model.travelDate">
+  </div>
+
+  <div class="form-group">
+    <label># Of Traveler(s)</label>
+    <input type="number" class="form-control" name="numPeople" min="1" [(ngModel)]="model.totalCost">
+  </div>
+
+  <div class="form-group">
+    <button class="btn btn-primary btn-block">Submit</button>
+  </div>
+</form>
