@@ -1,10 +1,6 @@
-<!--
-  Revision of class registration to include binding to component model
-
-  Highlight
-  Find the <input> tag next to the Name label.
-  Add the ngModel directive, using two-way data binding syntax [(ngModel)]="...".
--->
+<h2>Welcome to Travel App</h2>
+<h3>Use the form below to calculate flight cost.</h3>
+<div class="container">
 <form #form="ngForm" (ngSubmit)="onSubmit(form)">
   <div class="form-group">
     <label>Origination Airport</label>
@@ -30,3 +26,4 @@
     <button class="btn btn-primary btn-block">Submit</button>
   </div>
 </form>
+</div>
