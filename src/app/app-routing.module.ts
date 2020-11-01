@@ -6,7 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {path: 'flightcost', component: FlightCostComponent},
   {path: 'about', component: AboutComponent}
-]
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
